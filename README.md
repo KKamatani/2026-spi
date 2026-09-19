@@ -25,7 +25,7 @@ bundle exec jekyll build
 
 - `_data/event.yml`：開催日，会場，部屋，連絡先．
 - `_data/programme.yml`：プログラムの時刻・順序・記念講演の指定．
-- `_data/speakers.yml`：講演者名，演題 (`title`)，講演要旨 (`abstract`)．要旨には Markdown を使用できます．
+- `_data/speakers.yml`：講演者名，所属 (`affiliation`)，演題 (`title`)，講演要旨 (`abstract`)．要旨には Markdown を使用できます．
 - `index.md`：本文・参加案内．
 - `assets/css/site.css`：配色・レイアウト．
 
@@ -35,12 +35,16 @@ bundle exec jekyll build
 
 `_config.yml` に `url: "https://kkamatani.github.io"`，`baseurl: "/2026-spi"` を設定済みです．GitHub に `2026-spi` リポジトリを作成してファイルを配置し，Settings → Pages で `main` ブランチのルートを公開元に指定できます．このフォルダーの作成のみでは公開されません．
 
-## 氏名の確認元
+## 氏名・所属の確認元
 
-2025-spi に掲載済みの氏名に加え，以下の公式プロフィールを確認しています（2026年9月19日）．
+以下の公式プロフィール・教員一覧を確認しています（2026年9月19日）．所属は大学・研究所名で表記しています．内田雅之先生の所属は現在の東京大学の公式情報に合わせています．
 
 - [深澤 正彰](https://www.sigmath.es.osaka-u.ac.jp/~fukasawa/)
+- [鎌谷 研吾](https://www.ism.ac.jp/souran/index_j.html)
+- [清水 泰隆](https://w-rdb.waseda.jp/html/100001269_ja.html)
+- [内田 雅之](https://www.ms.u-tokyo.ac.jp/teacher/uchida.html)
 - [小池 祐太](https://www.ms.u-tokyo.ac.jp/teacher/koike.html)
 - [荻原 哲平](https://www.u-tokyo.ac.jp/focus/ja/people/k0001_02319.html)
 - [増田 弘毅](https://www.u-tokyo.ac.jp/focus/en/people/k0001_04486.html)
+- [吉田 朋広](https://www.u-tokyo.ac.jp/focus/ja/people/people000343.html)
 - [統計数理研究所の住所](https://www.ism.ac.jp/editsec/Nenpou/H29nenpou.pdf)

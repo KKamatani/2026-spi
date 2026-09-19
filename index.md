@@ -79,6 +79,7 @@ image: /assets/img/hero.jpg
                   {% assign speaker = site.data.speakers[slot.speaker] %}
                   <a href="#abs-{{ slot.speaker }}" class="fw-semibold">{{ speaker.name }}</a>
                   {% if slot.commemorative %}<span class="commemorative-badge">記念講演</span>{% endif %}
+                  <span class="small text-secondary w-100">{{ speaker.affiliation | escape }}</span>
                   {% else %}{{ slot.label }}{% endif %}
                 </div>
               </li>
@@ -104,7 +105,7 @@ image: /assets/img/hero.jpg
       <div class="col-md-6">
         <article class="abstract-entry h-100" id="abs-{{ slot.speaker }}">
           <p class="small text-secondary mb-2">{{ slot.start }}–{{ slot.end }}</p>
-          <h3 class="h6 mb-2">{{ speaker.name }}</h3>
+          <h3 class="h6 mb-2">{{ speaker.name }}<span class="small fw-normal text-secondary">（{{ speaker.affiliation | escape }}）</span></h3>
           {% if speaker.title != '' %}<p class="fw-semibold mb-2">{{ speaker.title | escape }}</p>{% endif %}
           {% if speaker.abstract != '' %}
           <div class="abstract-body">{{ speaker.abstract | markdownify }}</div>
@@ -129,7 +130,7 @@ image: /assets/img/hero.jpg
       {% for slot in session.slots %}
       {% if slot.speaker %}
       {% assign speaker = site.data.speakers[slot.speaker] %}
-      <li class="col-sm-6 col-lg-3"><a href="#abs-{{ slot.speaker }}">{{ speaker.name }}</a></li>
+      <li class="col-sm-6 col-lg-3"><a href="#abs-{{ slot.speaker }}">{{ speaker.name }}</a><span class="d-block small text-secondary">{{ speaker.affiliation | escape }}</span></li>
       {% endif %}
       {% endfor %}
       {% endfor %}

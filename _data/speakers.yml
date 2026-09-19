@@ -1,37 +1,48 @@
 fukasawa:
   name: "深澤 正彰"
+  affiliation: "大阪大学"
   profile: "https://www.sigmath.es.osaka-u.ac.jp/~fukasawa/"
   title: ""
   abstract: ""
 kamatani:
   name: "鎌谷 研吾"
+  affiliation: "統計数理研究所"
+  profile: "https://www.ism.ac.jp/souran/index_j.html"
   title: ""
   abstract: ""
 shimizu:
   name: "清水 泰隆"
+  affiliation: "早稲田大学"
+  profile: "https://w-rdb.waseda.jp/html/100001269_ja.html"
   title: ""
   abstract: ""
 uchida:
   name: "内田 雅之"
+  affiliation: "大阪大学・東京大学"
+  profile: "https://www.ms.u-tokyo.ac.jp/teacher/uchida.html"
   title: ""
   abstract: ""
 koike:
   name: "小池 祐太"
+  affiliation: "東京大学"
   profile: "https://www.ms.u-tokyo.ac.jp/teacher/koike.html"
   title: ""
   abstract: ""
 ogihara:
   name: "荻原 哲平"
+  affiliation: "東京大学"
   profile: "https://www.u-tokyo.ac.jp/focus/ja/people/k0001_02319.html"
   title: ""
   abstract: ""
 masuda:
   name: "増田 弘毅"
+  affiliation: "東京大学"
   profile: "https://www.u-tokyo.ac.jp/focus/en/people/k0001_04486.html"
   title: ""
   abstract: ""
 yoshida:
   name: "吉田 朋広"
+  affiliation: "東京大学"
+  profile: "https://www.u-tokyo.ac.jp/focus/ja/people/people000343.html"
   title: ""
   abstract: ""
-
