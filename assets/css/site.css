@@ -17,9 +17,13 @@ main a:not(.btn) {
 }
 main a:not(.btn):hover { color: var(--brand-a); text-decoration-color: currentColor; }
 :focus-visible { outline: 3px solid #a78bfa; outline-offset: 4px; }
-#topnav { background: linear-gradient(135deg, var(--brand-a), var(--brand-b)); }
+#topnav {
+  background: linear-gradient(135deg, rgba(59, 29, 96, .60), rgba(79, 70, 229, .60));
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
 .navbar-brand { font-size: 1.1rem; }
-.navbar .nav-link { color: rgba(255, 255, 255, .85); font-size: .9rem; }
+.navbar .nav-link { color: #fff; font-size: .9rem; }
 .navbar .nav-link:hover, .navbar .nav-link.active { color: #fff; }
 .navbar .nav-link.active { font-weight: 700; }
 .hero {
@@ -83,4 +87,3 @@ main a:not(.btn):hover { color: var(--brand-a); text-decoration-color: currentCo
   html { scroll-behavior: auto; }
   .collapsing { transition: none; }
 }
-
