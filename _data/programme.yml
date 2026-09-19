@@ -1,0 +1,56 @@
+- title: "午前の部"
+  time: "10:00–12:20"
+  slots:
+    - start: "10:00"
+      end: "10:05"
+      label: "開会"
+    - start: "10:05"
+      end: "10:25"
+      speaker: fukasawa
+    - start: "10:25"
+      end: "10:45"
+      speaker: kamatani
+    - start: "10:45"
+      end: "11:05"
+      speaker: shimizu
+    - start: "11:05"
+      end: "11:15"
+      label: "休憩"
+      break: true
+    - start: "11:15"
+      end: "11:35"
+      speaker: uchida
+    - start: "11:35"
+      end: "12:20"
+      speaker: koike
+      commemorative: true
+    - start: "12:20"
+      end: "13:30"
+      label: "昼食"
+      break: true
+- title: "午後の部"
+  time: "13:30–16:15"
+  slots:
+    - start: "13:30"
+      end: "14:15"
+      speaker: ogihara
+      commemorative: true
+    - start: "14:15"
+      end: "14:30"
+      label: "コーヒーブレイク"
+      break: true
+    - start: "14:30"
+      end: "15:15"
+      speaker: masuda
+      commemorative: true
+    - start: "15:15"
+      end: "15:25"
+      label: "休憩"
+      break: true
+    - start: "15:25"
+      end: "16:10"
+      speaker: yoshida
+    - start: "16:10"
+      end: "16:15"
+      label: "閉会"
+

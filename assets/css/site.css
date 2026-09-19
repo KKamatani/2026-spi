@@ -1,0 +1,86 @@
+:root {
+  --brand-a: #3b1d60;
+  --brand-b: #4f46e5;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body {
+  font-family: "Inter", "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.8;
+  color: #212529;
+  overflow-wrap: break-word;
+}
+h1, h2, h3 { line-height: 1.5; }
+main a:not(.btn) {
+  color: #212529;
+  text-decoration-color: rgba(33, 37, 41, .35);
+  text-underline-offset: .2em;
+}
+main a:not(.btn):hover { color: var(--brand-a); text-decoration-color: currentColor; }
+:focus-visible { outline: 3px solid #a78bfa; outline-offset: 4px; }
+#topnav { background: linear-gradient(135deg, var(--brand-a), var(--brand-b)); }
+.navbar-brand { font-size: 1.1rem; }
+.navbar .nav-link { color: rgba(255, 255, 255, .85); font-size: .9rem; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: #fff; }
+.navbar .nav-link.active { font-weight: 700; }
+.hero {
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--brand-a);
+  background-image: linear-gradient(135deg, rgba(21, 20, 43, .63), rgba(21, 20, 43, .28)), var(--hero-img);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center calc(56% + var(--shift, 0px));
+}
+.hero h1 { font-size: clamp(2rem, 3.5vw, 3.25rem); line-height: 1.55; letter-spacing: .025em; }
+.hero-year { display: block; margin-top: .25rem; font-size: 1.2em; letter-spacing: .08em; }
+.hero .lead { font-size: 1.1rem; }
+.hero .badge { font-size: .875rem; padding: .7em 1em; line-height: 1.5; white-space: normal; }
+.hero-meta { font-variant-numeric: tabular-nums; }
+.bg-glass { background: rgba(20, 18, 40, .55); border: 1px solid rgba(255, 255, 255, .25); backdrop-filter: blur(8px); }
+.event-details { display: grid; grid-template-columns: 3em 1fr; gap: .9rem 1rem; }
+.event-details dd { margin: 0; }
+.section-pad { padding: 5rem 0; }
+.card { border-color: #e4e2ea; border-radius: .8rem; }
+.notice-list { padding-left: 1.3em; }
+.notice-list li + li { margin-top: .5rem; }
+.btn-outline-primary {
+  --bs-btn-color: var(--brand-b);
+  --bs-btn-border-color: var(--brand-b);
+  --bs-btn-hover-bg: var(--brand-b);
+  --bs-btn-hover-border-color: var(--brand-b);
+  --bs-btn-active-bg: var(--brand-a);
+  --bs-btn-active-border-color: var(--brand-a);
+}
+.schedule { list-style: none; padding: 0; }
+.schedule-row { display: grid; grid-template-columns: 7.5rem 1fr; gap: .75rem; padding: .9rem .65rem; border-top: 1px solid #eceaf0; align-items: baseline; }
+.schedule-time { white-space: nowrap; font-size: .875rem; font-variant-numeric: tabular-nums; }
+.schedule-description { display: flex; flex-wrap: wrap; align-items: center; gap: .3rem .65rem; font-size: .95rem; }
+.schedule-break { color: #636773; background: #f8f9fa; }
+.schedule-commemorative { background: #f3effa; border-left: 3px solid #7653a0; padding-left: calc(.65rem - 3px); }
+.commemorative-badge { display: inline-block; padding: .15em .6em; border: 1px solid #d8cbe9; border-radius: .35rem; color: #59347c; background: #f3effa; font-size: .75rem; font-weight: 600; white-space: nowrap; }
+.abstract-entry { padding: .25rem 0 .25rem 1.25rem; border-left: 2px solid #e1d8ed; }
+.abstract-body { color: #6c757d; font-size: .95rem; }
+.abstract-entry:target { border-left-color: var(--brand-b); background: #faf8fd; }
+#backToTop { right: 1rem; bottom: 1rem; z-index: 1040; }
+.skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 1100; padding: .6rem 1rem; color: #fff; background: var(--brand-a); }
+.skip-link:focus { top: .5rem; }
+@media (max-width: 575.98px) {
+  .navbar-brand { font-size: .95rem; }
+  .hero { padding-top: 4.5rem; min-height: 60vh; }
+  .hero h1 { font-size: clamp(1.6rem, 6vw, 2rem); }
+  .hero .lead { font-size: 1rem; }
+  .hero .btn-lg { font-size: 1rem; }
+  .section-pad { padding: 3.25rem 0; }
+  .schedule-row { grid-template-columns: 6.65rem 1fr; gap: .4rem; padding-inline: .4rem; }
+  .schedule-time { font-size: .8rem; }
+  .schedule-description { font-size: .875rem; }
+  .schedule-commemorative { padding-left: calc(.4rem - 3px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .collapsing { transition: none; }
+}
+

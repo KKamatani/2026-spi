@@ -1,0 +1,21 @@
+title: "確率過程の統計推測の最近の展開 2026"
+short_title: "確率過程の統計推測 2026"
+description: "2026年12月5日（土）10:00–16:15，統計数理研究所（立川）で開催する研究集会．"
+lang: ja
+locale: ja_JP
+timezone: Asia/Tokyo
+url: "https://kkamatani.github.io"
+baseurl: "/2026-spi"
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
