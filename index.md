@@ -9,10 +9,10 @@ image: /assets/img/hero.jpg
   <div class="container py-5">
     <div class="row gx-4 gy-5 align-items-center">
       <div class="col-lg-7">
-        <span class="badge bg-glass mb-3">{{ event.date_label }} ｜ 立川</span>
+        <span class="badge bg-glass mb-3">{{ event.date_label }} ｜ 会場未定</span>
         <h1 id="event-title" class="display-4 fw-bold"><span class="d-block">確率過程の統計推測の</span><span class="d-block">最近の展開</span><span class="hero-year">2026</span></h1>
         <p class="lead mt-3">確率過程の統計推測をめぐる研究集会</p>
-        <p class="hero-meta mb-0">{{ event.time }} ｜ {{ event.venue }}</p>
+        <p class="hero-meta mb-0">{{ event.time }} ｜ 会場：{{ event.venue }}</p>
         <div class="d-flex gap-2 mt-4 flex-wrap">
           <a href="#programme" class="btn btn-light btn-lg">プログラムを見る</a>
           <a href="#venue" class="btn btn-outline-light btn-lg">会場案内</a>
@@ -23,7 +23,7 @@ image: /assets/img/hero.jpg
           <h2 class="h5 mb-3"><i class="bi bi-calendar-week me-2" aria-hidden="true"></i>開催情報</h2>
           <dl class="event-details mb-0">
             <dt>日時</dt><dd><time datetime="{{ event.date }}">{{ event.date_label }}</time><br>{{ event.time }}</dd>
-            <dt>会場</dt><dd>{{ event.venue }}（立川）<br><span class="small">{{ event.room }}</span></dd>
+            <dt>会場</dt><dd>{{ event.venue }}</dd>
             <dt>講演</dt><dd>8講演</dd>
           </dl>
         </div>
@@ -37,15 +37,15 @@ image: /assets/img/hero.jpg
     <div class="row g-4 align-items-center">
       <div class="col-lg-7">
         <h2 id="about-title" class="h3 mb-3">開催概要</h2>
-        <p class="mb-0">「確率過程の統計推測の最近の展開」を，{{ event.date_label }}に{{ event.venue }}で開催します．確率過程の統計推測に関する研究を共有し，議論する研究集会です．</p>
-        <p class="small text-secondary mt-3 mb-0">本研究集会は JST CREST（課題番号：JPMJCR2115，研究代表者：吉田朋広）の一部支援を受けています．</p>
+        <p class="mb-0">「確率過程の統計推測の最近の展開」を，{{ event.date_label }}に開催します．会場は未定です．確率過程の統計推測に関する研究を共有し，議論する研究集会です．</p>
+        <p class="small text-secondary mt-3 mb-0">本研究集会は JST CREST（課題番号：JPMJCR2115，研究代表者：吉田朋広）の支援を受けています．</p>
       </div>
       <div class="col-lg-5">
         <div class="card shadow-sm">
           <div class="card-body p-4">
             <h3 class="h6 mb-3">お知らせ</h3>
             <ul class="small mb-0 notice-list">
-              <li>会場は統計数理研究所 D222講義室です．</li>
+              <li>会場は未定です．決まり次第ご案内します．</li>
               <li>演題・講演要旨は後日掲載します．</li>
               <li>参加方法は後日ご案内します．</li>
             </ul>
@@ -141,6 +141,9 @@ image: /assets/img/hero.jpg
 <section id="venue" class="section-pad" aria-labelledby="venue-title">
   <div class="container">
     <h2 id="venue-title" class="h3 mb-4">会場案内</h2>
+    <p class="mb-0">会場は未定です．決まり次第ご案内します．</p>
+    {% comment %}
+    統計数理研究所で開催する場合の会場案内（未確定）．
     <div class="row g-4 align-items-stretch">
       <div class="col-lg-6">
         <h3 class="h5 mb-3">{{ event.venue }}（立川）</h3>
@@ -154,6 +157,7 @@ image: /assets/img/hero.jpg
         </div>
       </div>
     </div>
+    {% endcomment %}
   </div>
 </section>
 
