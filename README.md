@@ -1,6 +1,6 @@
 # 確率過程の統計推測の最近の展開 2026
 
-2026年12月5日（土）10:00–16:15，会場未定．
+2026年12月5日（土）10:00–16:15，東京大学大学院数理科学研究科 数理科学研究科棟 117講義室（駒場Ⅰキャンパス）．
 
 2025-spi の研究集会名と背景写真を引き継ぎ，2026-stochastic-analysis-statistics の Jekyll + Bootstrap 5 のデザインを日本語化したサイトです．
 
@@ -47,4 +47,9 @@ bundle exec jekyll build
 - [荻原 哲平](https://www.u-tokyo.ac.jp/focus/ja/people/k0001_02319.html)
 - [増田 弘毅](https://www.u-tokyo.ac.jp/focus/en/people/k0001_04486.html)
 - [吉田 朋広](https://www.u-tokyo.ac.jp/focus/ja/people/people000343.html)
-- [統計数理研究所の住所](https://www.ism.ac.jp/editsec/Nenpou/H29nenpou.pdf)
+
+## 会場情報の確認元
+
+- [東京大学大学院数理科学研究科 アクセスマップ](https://www.ms.u-tokyo.ac.jp/access/)：所在地・最寄り駅．
+- [東京大学大学院数理科学研究科の研究集会案内（PDF）](https://www.ms.u-tokyo.ac.jp/~asuke/difftop2021/202206program_final.pdf)：正式名称「数理科学研究科棟 117講義室」．
+- [東京大学 駒場Ⅰキャンパスの交通アクセス・キャンパスマップ](https://www.c.u-tokyo.ac.jp/info/about/visitors/maps-directions/)：キャンパス名．

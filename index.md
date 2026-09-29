@@ -9,10 +9,10 @@ image: /assets/img/hero.jpg
   <div class="container py-5">
     <div class="row gx-4 gy-5 align-items-center">
       <div class="col-lg-7">
-        <span class="badge bg-glass mb-3">{{ event.date_label }} ｜ 会場未定</span>
+        <span class="badge bg-glass mb-3">{{ event.date_label }} ｜ {{ event.campus }}</span>
         <h1 id="event-title" class="display-4 fw-bold"><span class="d-block">確率過程の統計推測の</span><span class="d-block">最近の展開</span><span class="hero-year">2026</span></h1>
         <p class="lead mt-3">確率過程の統計推測をめぐる研究集会</p>
-        <p class="hero-meta mb-0">{{ event.time }} ｜ 会場：{{ event.venue }}</p>
+        <p class="hero-meta mb-0">{{ event.time }} ｜ 会場：{{ event.venue }}<br>{{ event.room }}</p>
         <div class="d-flex gap-2 mt-4 flex-wrap">
           <a href="#programme" class="btn btn-light btn-lg">プログラムを見る</a>
           <a href="#venue" class="btn btn-outline-light btn-lg">会場案内</a>
@@ -23,7 +23,7 @@ image: /assets/img/hero.jpg
           <h2 class="h5 mb-3"><i class="bi bi-calendar-week me-2" aria-hidden="true"></i>開催情報</h2>
           <dl class="event-details mb-0">
             <dt>日時</dt><dd><time datetime="{{ event.date }}">{{ event.date_label }}</time><br>{{ event.time }}</dd>
-            <dt>会場</dt><dd>{{ event.venue }}</dd>
+            <dt>会場</dt><dd>{{ event.venue }}（{{ event.campus }}）<br><span class="small">{{ event.room }}</span></dd>
             <dt>講演</dt><dd>8講演</dd>
           </dl>
         </div>
@@ -37,7 +37,7 @@ image: /assets/img/hero.jpg
     <div class="row g-4 align-items-center">
       <div class="col-lg-7">
         <h2 id="about-title" class="h3 mb-3">開催概要</h2>
-        <p class="mb-0">「確率過程の統計推測の最近の展開」を，{{ event.date_label }}に開催します．会場は未定です．確率過程の統計推測に関する研究を共有し，議論する研究集会です．</p>
+        <p class="mb-0">「確率過程の統計推測の最近の展開」を，{{ event.date_label }}に{{ event.venue }} {{ event.room }}（{{ event.campus }}）で開催します．確率過程の統計推測に関する研究を共有し，議論する研究集会です．</p>
         <p class="small text-secondary mt-3 mb-0">本研究集会は JST CREST（課題番号：JPMJCR2115，研究代表者：吉田朋広）の支援を受けています．</p>
       </div>
       <div class="col-lg-5">
@@ -45,7 +45,7 @@ image: /assets/img/hero.jpg
           <div class="card-body p-4">
             <h3 class="h6 mb-3">お知らせ</h3>
             <ul class="small mb-0 notice-list">
-              <li>会場は未定です．決まり次第ご案内します．</li>
+              <li>会場は{{ event.venue }} {{ event.room }}（{{ event.campus }}）に決定しました．</li>
               <li>演題・講演要旨は後日掲載します．</li>
               <li>参加方法は後日ご案内します．</li>
             </ul>
@@ -141,14 +141,27 @@ image: /assets/img/hero.jpg
 <section id="venue" class="section-pad" aria-labelledby="venue-title">
   <div class="container">
     <h2 id="venue-title" class="h3 mb-4">会場案内</h2>
-    <p class="mb-0">会場は未定です．決まり次第ご案内します．</p>
-    {% comment %}
-    統計数理研究所で開催する場合の会場案内（未確定）．
     <div class="row g-4 align-items-stretch">
       <div class="col-lg-6">
-        <h3 class="h5 mb-3">{{ event.venue }}（立川）</h3>
+        <h3 class="h5 mb-3">{{ event.venue }}（{{ event.campus }}）</h3>
         <p>{{ event.address }}</p>
-        <p class="mb-4"><strong>会場の部屋</strong><br>{{ event.room }}</p>
+        <p><strong>会場の部屋</strong><br>{{ event.room }}</p>
+        <p class="mb-4">京王井の頭線「駒場東大前」駅下車．</p>
+        <a href="https://www.ms.u-tokyo.ac.jp/access/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">数理科学研究科のアクセス案内<i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i></a>
+      </div>
+      <div class="col-lg-6">
+        <div class="ratio ratio-16x9 shadow-sm rounded-3 overflow-hidden">
+          <iframe title="東京大学数理科学研究科棟（駒場Ⅰキャンパス）の地図" src="https://www.google.com/maps?q=東京大学数理科学研究科棟+東京都目黒区駒場3-8-1&amp;output=embed&amp;hl=ja" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    {% comment %}
+    以前の候補会場：統計数理研究所（記録用）．
+    <div class="row g-4 align-items-stretch">
+      <div class="col-lg-6">
+        <h3 class="h5 mb-3">統計数理研究所（立川）</h3>
+        <p>〒190-8562 東京都立川市緑町10-3</p>
+        <p class="mb-4"><strong>会場の部屋</strong><br>D222講義室</p>
         <a href="https://www.ism.ac.jp/" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">統計数理研究所のウェブサイト<i class="bi bi-box-arrow-up-right ms-2" aria-hidden="true"></i></a>
       </div>
       <div class="col-lg-6">
