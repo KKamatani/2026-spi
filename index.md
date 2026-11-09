@@ -130,7 +130,7 @@ image: /assets/img/hero.jpg
       {% for slot in session.slots %}
       {% if slot.speaker %}
       {% assign speaker = site.data.speakers[slot.speaker] %}
-      <li class="col-sm-6 col-lg-3"><a href="#abs-{{ slot.speaker }}">{{ speaker.name }}</a><span class="d-block small text-secondary">{{ speaker.affiliation | escape }}</span></li>
+      <li class="col-sm-6 col-lg-3"><a href="{{ speaker.profile | escape }}" target="_blank" rel="noopener noreferrer">{{ speaker.name }}</a><span class="d-block small text-secondary">{{ speaker.affiliation | escape }}</span></li>
       {% endif %}
       {% endfor %}
       {% endfor %}
