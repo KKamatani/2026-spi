@@ -2,10 +2,10 @@
 layout: default
 title: 確率過程の統計推測の最近の展開 2026
 permalink: /
-image: /assets/img/hero.jpg
+image: /assets/img/IMG_4837.jpeg
 ---
 {% assign event = site.data.event %}
-<section id="home" class="hero parallax text-light" style="--hero-img: url('{{ '/assets/img/hero.jpg' | relative_url }}'); --speed: .15;" aria-labelledby="event-title">
+<section id="home" class="hero parallax" style="--hero-img: url('{{ '/assets/img/IMG_4837.jpeg' | relative_url }}'); --speed: .15;" aria-labelledby="event-title">
   <div class="container py-5">
     <div class="row gx-4 gy-5 align-items-center">
       <div class="col-lg-7">
@@ -14,8 +14,8 @@ image: /assets/img/hero.jpg
         <p class="lead mt-3">確率過程の統計推測をめぐる研究集会</p>
         <p class="hero-meta mb-0">{{ event.time }} ｜ 会場：{{ event.venue }}<br>{{ event.room }}</p>
         <div class="d-flex gap-2 mt-4 flex-wrap">
-          <a href="#programme" class="btn btn-light btn-lg">プログラムを見る</a>
-          <a href="#venue" class="btn btn-outline-light btn-lg">会場案内</a>
+          <a href="#programme" class="btn btn-primary btn-lg">プログラムを見る</a>
+          <a href="#venue" class="btn btn-outline-primary btn-lg">会場案内</a>
         </div>
       </div>
       <div class="col-lg-5">
