@@ -14,7 +14,8 @@ image: /assets/img/IMG_4837.jpeg
         <p class="lead mt-3">確率過程の統計推測をめぐる研究集会</p>
         <p class="hero-meta mb-0">{{ event.time }} ｜ 会場：{{ event.venue }}<br>{{ event.room }}</p>
         <div class="d-flex gap-2 mt-4 flex-wrap">
-          <a href="#programme" class="btn btn-primary btn-lg">プログラムを見る</a>
+          <a href="{{ event.registration_url | escape }}" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">参加登録</a>
+          <a href="#programme" class="btn btn-outline-primary btn-lg">プログラムを見る</a>
           <a href="#venue" class="btn btn-outline-primary btn-lg">会場案内</a>
         </div>
       </div>
@@ -47,7 +48,7 @@ image: /assets/img/IMG_4837.jpeg
             <ul class="small mb-0 notice-list">
               <li>会場は{{ event.venue }} {{ event.room }}（{{ event.campus }}）に決定しました．</li>
               <li>演題・講演要旨は後日掲載します．</li>
-              <li>参加方法は後日ご案内します．</li>
+              <li>参加を希望される方は，準備の都合上，<a href="{{ event.registration_url | escape }}" target="_blank" rel="noopener noreferrer">参加登録フォーム</a>より事前登録にご協力いただけますと幸いです．</li>
             </ul>
           </div>
         </div>
